@@ -9,13 +9,10 @@ const eventHandler = () => {
     const number2 = document.getElementById('number-2');
     const result = document.getElementById('result');
     const updateDomWithAddedNumbers = () => {
-        result.innerHTML = 
-            // parseInt(number1.value, 10)+parseInt(number2.value,10);
-            add(number1.value,number2.value);
+        result.innerHTML =  "The numbers added together equals " + add(number1.value,number2.value);
     }
     const updateDomWithMultipliedNumbers = () => {
-        result.innerHTML =
-            multiply(number1.value, number2.value);
+        result.innerHTML =  "The numbers multiplied together equals " + multiply(number1.value,number2.value);
     }
 
     addButton.addEventListener('click', updateDomWithAddedNumbers);
